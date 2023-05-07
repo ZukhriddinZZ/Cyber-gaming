@@ -1,0 +1,416 @@
+:root {
+  --body-bg: #1f2122;
+  --main-pink: #ec6090;
+  --light-grey: #666;
+  --main-black: #27292a;
+  --content-bg: #27292a;
+}
+
+::selection {
+  background-color: var(--main-pink);
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.active {
+  color: var(--main-pink);
+}
+
+h2 {
+  color: var(--main-pink);
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+body {
+  background-color: var(--body-bg);
+}
+
+nav {
+  max-width: 1100px;
+  height: 12vh;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--main-black);
+  border-radius: 40px;
+}
+
+.nav_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left_content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.left_content > input {
+  background-color: var(--content-bg);
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+}
+.nav_content > ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 2rem;
+  color: var(--light-grey);
+}
+
+.nav_content > ul > li {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.profile_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  padding-left: 1.5rem;
+  border-radius: 30px;
+}
+
+.profile_btn > img {
+  border-radius: 50%;
+}
+
+.nav_content > ul > li:hover {
+  color: var(--main-pink);
+}
+
+.profile_btn:hover {
+  background-color: var(--main-pink);
+  color: white !important;
+}
+
+.mobile_nav {
+  position: relative;
+  top: 2rem;
+  color: var(--light-grey);
+  list-style-type: none;
+  transition: 0.5s linear;
+  overflow: hidden;
+}
+
+.clickshow {
+  height: 205px;
+}
+
+.menu_button {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile_nav > li {
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.mobile_nav > li:hover {
+  background-color: var(--content-bg);
+  color: var(--main-pink);
+}
+
+main {
+  max-width: 1100px;
+  padding: 5rem;
+  margin: auto;
+  background-color: var(--main-black);
+  margin-top: 3rem;
+  border-radius: 30px;
+}
+
+header {
+  background-image: url(https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/banner-bg.jpg);
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.header_content {
+  width: 50%;
+  color: white;
+  border-radius: 30px;
+}
+
+.header_content > p {
+  font-size: 1.4rem;
+}
+
+.header_content > h1 {
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+}
+
+.header_content > button {
+  font-size: 1rem;
+  padding: 12px 2rem;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--main-pink);
+  color: white;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.header_content > button:hover {
+  background-color: white;
+  color: var(--main-pink);
+}
+
+.popular_section {
+  background-color: var(--body-bg);
+  margin: 5rem 0;
+  padding: 2rem 2rem 3rem;
+  border-radius: 30px;
+  position: relative;
+}
+
+.items_container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+}
+
+.item {
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  color: white;
+  justify-content: space-between;
+  background-color: var(--main-black);
+  border-radius: 30px;
+}
+
+.duo_box {
+  display: flex;
+  grid-column: 1/3;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.duo_box > .item {
+  border-radius: 0;
+  flex-grow: 1;
+}
+
+.item > img {
+  width: 100%;
+  grid-column: 1/3;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.item > span {
+  text-align: end;
+}
+
+.fa-star {
+  color: yellow;
+}
+
+.fa-download {
+  color: var(--main-pink);
+}
+
+.discover_btn {
+  padding: 12px 2rem;
+  font: 1rem;
+  border: none;
+  background-color: var(--main-pink);
+  border-radius: 25px;
+  color: white;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.discover_btn:hover {
+  background-color: white;
+  color: var(--main-pink);
+}
+
+.lib_section {
+  background-color: var(--body-bg);
+  border-radius: 30px;
+}
+
+.lib_item {
+  display: flex;
+  color-scheme: white;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--content-bg);
+}
+
+.lib_item > div {
+  display: flex;
+}
+
+.lib_img {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+}
+/* 
+.lib_img > div > p {
+  color: white;
+} */
+
+/* .lib_img > div > span {
+  color: var(--light-grey);
+} */
+
+.lib_img > img {
+  border-radius: 20px;
+}
+
+.lib_item_i {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.lib_item_i > h4 {
+  line-height: 25px;
+}
+
+.lib_item_i > h4:nth-child(1) {
+}
+
+.lib_item_i > h4 > p {
+  color: white;
+}
+
+.lib_item_i > h4 > span {
+  color: var(--light-grey);
+  font-weight: 400;
+}
+
+.lib_item > button {
+  padding: 14px 2.5rem;
+  border: 1px solid var(--light-grey);
+  border-radius: 25px;
+  color: var(--light-grey);
+  background-color: transparent;
+  margin-left: 2rem;
+}
+
+.lib_item > .active_button {
+  color: var(--main-pink);
+  border: 1px solid var(--main-pink);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.active_button:hover {
+  background-color: white;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 3rem 1rem;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    max-width: 800px;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .nav_content > ul {
+    display: none;
+  }
+
+  .left_content > input {
+    display: none;
+  }
+
+  .menu_button {
+    display: block;
+  }
+
+  .header_content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header_content > h1 {
+    font-size: 1.9rem;
+  }
+
+  .items_container {
+    grid-template-columns: auto auto;
+  }
+
+  .lib_item {
+    justify-content: center;
+  }
+
+  .lib_item_i {
+    justify-content: center;
+  }
+
+  .lib_item_i > h4:nth-child(1) {
+    margin: 0;
+  }
+
+  .lib_item > button {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .items_container {
+    grid-template-columns: auto;
+  }
+
+  .duo_box {
+    flex-direction: column;
+    grid-column: 1/2;
+  }
+}
