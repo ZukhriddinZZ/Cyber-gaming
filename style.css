@@ -105,15 +105,17 @@ nav {
 }
 
 .mobile_nav {
-  position: relative;
-  top: 2rem;
+  position: absolute;
+  top: 16vh;
   color: var(--light-grey);
   list-style-type: none;
   transition: 0.5s linear;
   overflow: hidden;
+  height: 0;
 }
 
 .clickshow {
+  transition: 0.5s ease;
   height: 205px;
 }
 
